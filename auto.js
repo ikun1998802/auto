@@ -14,6 +14,19 @@
     let SendMsgClassName = ".WrS6ZBHo"
     let LongTimeClassName = ".JL05k7eS"
 
+    function checkLongTime() {
+        console.log("auto 开始检测是否长时间无操作")
+        setInterval(() => {
+            const dom = document.querySelector(LongTimeClassName)
+            if (dom) {
+                console.log("auto 有提示无操作")
+                dom.click()
+            } else {
+                console.log("auto 没有提示长时间无操作")
+            }
+        }, 1000)
+    }
+
     function checkLuckyBag() {
         console.log("auto 开始检测福袋")
 
@@ -62,4 +75,5 @@
     }
 
     checkLuckyBag()
+    checkLongTime()
 })()
