@@ -12,6 +12,7 @@
     let ResultClassName = ".hJ3SHYaQ"
     let LuckyBagClassName = ".ycjwPFJI"
     let SendMsgClassName = ".WrS6ZBHo"
+    let LongTimeClassName = ".JL05k7eS"
 
     function checkLuckyBag() {
         console.log("auto 开始检测福袋")
